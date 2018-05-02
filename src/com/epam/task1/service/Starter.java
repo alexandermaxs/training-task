@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
 import com.epam.task1.model.*;
 
 public class Starter {
@@ -15,21 +14,16 @@ public class Starter {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please, enter the offered sum for the playground (in BYN):");
         int fixedSum = scanner.nextInt();
-
         playground = new Playground(fixedSum);
         fill(playground, fixedSum);
-
         playground.setToys(sortByPrice(playground.getToys()));
         System.out.println("Descending price-list of all toys has been created.\nStarting the search...");
-
         System.out.println("Enter the bottom price border:");
         int botBorder = scanner.nextInt();
         System.out.println("Enter the top price border:");
         int topBorder = scanner.nextInt();
         System.out.println("Search output:");
-
         print(findPrice(botBorder, topBorder));
-
     }
 
     public static Toy generateToy(){
