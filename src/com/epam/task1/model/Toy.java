@@ -80,5 +80,3 @@ public class Toy implements Comparable<Toy>{
     }
 }
 
-}
-
