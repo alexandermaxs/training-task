@@ -5,25 +5,57 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import com.epam.task1.model.*;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.xml.DOMConfigurator;
 
 public class Starter {
 
     private static Playground playground;
 
+    static Logger logger = Logger.getLogger(Starter.class);
+
+    static {
+        new DOMConfigurator().doConfigure("log4j.xml", LogManager.getLoggerRepository());
+    }
+
     public static void main(String[] args) throws Exception{
+        logger.info("Starting new program instance!");
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please, enter the offered sum for the playground (in BYN):");
-        int fixedSum = scanner.nextInt();
+        logger.info("Please, enter the offered sum for the playground (in BYN):");
+        int fixedSum = enter(scanner, "fixedSum");
         playground = new Playground(fixedSum);
         fill(playground, fixedSum);
         playground.setToys(sortByPrice(playground.getToys()));
-        System.out.println("Descending price-list of all toys has been created.\nStarting the search...");
-        System.out.println("Enter the bottom price border:");
-        int botBorder = scanner.nextInt();
-        System.out.println("Enter the top price border:");
-        int topBorder = scanner.nextInt();
-        System.out.println("Search output:");
+        logger.info("Descending price-list of all toys has been created.\nStarting the search...");
+        logger.info("Enter the bottom price border:");
+        int botBorder = enter(scanner, "botBorder");
+        logger.info("Enter the top price border:");
+        int topBorder = enter(scanner, "topBorder");
+        logger.info("Search output:");
         print(findPrice(botBorder, topBorder));
+        logger.info("END.");
+
+    }
+
+    public static int enter(Scanner scanner, String name){
+        StringBuilder message = new StringBuilder();
+        int arg = 0;
+        try {
+            arg = scanner.nextInt();
+            message.append("Argument ");
+            message.append(name);
+            message.append(" is ");
+            message.append(arg);
+            logger.debug(message);
+        }
+        catch(Exception e){
+            message.append("user entered illegal argument for ");
+            message.append(name);
+            message.append(": ");
+            logger.error(message, e);
+        }
+        return arg;
     }
 
     public static Toy generateToy(){
@@ -46,7 +78,7 @@ public class Starter {
                 playground.setFixedSum(i);
             }
             else {
-                System.out.println("The playground successfully filled with toys");
+                logger.info("The playground successfully filled with toys");
             }
         }
     }
@@ -96,7 +128,7 @@ public class Starter {
             builder.append(" ");
             builder.append(toy.getPrice());
             builder.append(" BYN");
-            System.out.println(builder);
+            logger.info(builder);
         }
     }
 
