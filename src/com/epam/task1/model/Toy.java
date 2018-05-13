@@ -33,7 +33,7 @@ public class Toy implements Comparable<Toy>{
     public int compareTo(Toy other) {
         return Integer.compare(this.price, other.price);
     }
-    
+
     @Override
     public int hashCode()
     {
@@ -64,6 +64,9 @@ public class Toy implements Comparable<Toy>{
         return (type.equals(toy.type) && size.equals(toy.size));
     }
 
+    /**
+     * @return example - Toy@1234:Big#Ball#10
+     */
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();

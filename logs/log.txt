@@ -1,127 +1,28 @@
 
-11.05.2018 05:30:01 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:30:01 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:30:02 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 05:30:02 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 05:30:02 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 05:30:02 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 05:30:03 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
-11.05.2018 05:30:03 [main] INFO  com.epam.task1.service.Starter - Enter the top price border:
-11.05.2018 05:30:04 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 10
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Search output:
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Medium Cube 10 BYN
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Medium Cube 8 BYN
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Small Doll 4 BYN
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Small Ball 4 BYN
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - Small Ball 4 BYN
-11.05.2018 05:30:04 [main] INFO  com.epam.task1.service.Starter - END.
-11.05.2018 05:40:15 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:40:15 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:40:47 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 05:40:47 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 05:40:47 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 05:40:47 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 05:41:43 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
-11.05.2018 05:41:43 [main] INFO  com.epam.task1.service.Starter - Enter the top price border:
-11.05.2018 05:41:45 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 10
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Search output:
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Big Car 9 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Big Car 9 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Big Ball 9 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Medium Doll 8 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Medium Car 6 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Ball 5 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Doll 5 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Cube 5 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Doll 3 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Cube 3 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - Small Cube 3 BYN
-11.05.2018 05:41:45 [main] INFO  com.epam.task1.service.Starter - END.
-11.05.2018 05:42:17 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:42:17 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:43:49 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 05:43:49 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 05:43:49 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 05:43:49 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 05:47:41 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:47:41 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:49:22 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:49:22 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:49:26 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 05:49:26 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 05:49:26 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 05:49:26 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 05:54:43 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 05:54:43 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 05:54:47 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 05:54:47 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 05:54:47 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 05:54:47 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 05:54:48 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
-11.05.2018 05:54:48 [main] INFO  com.epam.task1.service.Starter - Enter the top price border:
-11.05.2018 05:54:49 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 10
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Search output:
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Medium Car 10 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Medium Ball 10 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Big Doll 9 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Medium Ball 8 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Medium Car 6 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Car 5 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Doll 5 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Ball 5 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Cube 5 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Car 4 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - Small Doll 3 BYN
-11.05.2018 05:54:49 [main] INFO  com.epam.task1.service.Starter - END.
-11.05.2018 15:29:37 [main] INFO  com.epam.task1.service.Starter - Starting new program instance!
-11.05.2018 15:29:37 [main] INFO  com.epam.task1.service.Starter - Please, enter the offered sum for the playground (in BYN):
-11.05.2018 15:29:39 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 15:29:39 [main] INFO  com.epam.task1.service.Starter - The playground successfully filled with toys
-11.05.2018 15:29:39 [main] INFO  com.epam.task1.service.Starter - Descending price-list of all toys has been created.
-Starting the search...
-11.05.2018 15:29:39 [main] INFO  com.epam.task1.service.Starter - Enter the bottom price border:
-11.05.2018 15:29:40 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Enter the top price border:
-11.05.2018 15:29:40 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 10
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Search output:
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Medium Cube 10 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Medium Cube 8 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Medium Doll 6 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Small Doll 5 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Small Doll 5 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Small Doll 5 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Small Car 4 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - Small Doll 4 BYN
-11.05.2018 15:29:40 [main] INFO  com.epam.task1.service.Starter - END.
-11.05.2018 16:43:25 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for fixedSum: 
+13.05.2018 04:19:34 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
+13.05.2018 04:19:42 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
+13.05.2018 04:19:44 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 10
+13.05.2018 04:20:11 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for fixedSum: 
 java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Scanner.java:860)
 	at java.base/java.util.Scanner.next(Scanner.java:1497)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2161)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2115)
-	at com.epam.task1.service.Starter.enter(Starter.java:45)
-	at com.epam.task1.service.Starter.main(Starter.java:26)
-11.05.2018 16:43:25 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for botBorder: 
-java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Scanner.java:860)
-	at java.base/java.util.Scanner.next(Scanner.java:1497)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2161)
-	at java.base/java.util.Scanner.nextInt(Scanner.java:2115)
-	at com.epam.task1.service.Starter.enter(Starter.java:45)
+	at com.epam.task1.service.Starter.enterArgument(Starter.java:58)
 	at com.epam.task1.service.Starter.main(Starter.java:32)
-11.05.2018 16:43:25 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for topBorder: 
+13.05.2018 04:20:11 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for botBorder: 
 java.util.InputMismatchException
 	at java.base/java.util.Scanner.throwFor(Scanner.java:860)
 	at java.base/java.util.Scanner.next(Scanner.java:1497)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2161)
 	at java.base/java.util.Scanner.nextInt(Scanner.java:2115)
-	at com.epam.task1.service.Starter.enter(Starter.java:45)
-	at com.epam.task1.service.Starter.main(Starter.java:34)
-11.05.2018 16:44:16 [main] DEBUG com.epam.task1.service.Starter - Argument fixedSum is 100
-11.05.2018 16:44:17 [main] DEBUG com.epam.task1.service.Starter - Argument botBorder is 0
-11.05.2018 16:44:19 [main] DEBUG com.epam.task1.service.Starter - Argument topBorder is 8
+	at com.epam.task1.service.Starter.enterArgument(Starter.java:58)
+	at com.epam.task1.service.Starter.main(Starter.java:38)
+13.05.2018 04:20:11 [main] ERROR com.epam.task1.service.Starter - user entered illegal argument for topBorder: 
+java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:860)
+	at java.base/java.util.Scanner.next(Scanner.java:1497)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2161)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2115)
+	at com.epam.task1.service.Starter.enterArgument(Starter.java:58)
+	at com.epam.task1.service.Starter.main(Starter.java:40)
