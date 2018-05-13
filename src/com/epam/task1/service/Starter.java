@@ -9,6 +9,12 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.xml.DOMConfigurator;
 
+/**
+ * Represents the creation of playground,
+ * filling it with different toys according to summary price.
+ * Provides structured search for several criteria.
+ * @author {@linktourl https://github.com/alexandermaxs}
+ */
 public class Starter {
 
     private static Playground playground;
@@ -22,23 +28,30 @@ public class Starter {
     public static void main(String[] args) throws Exception{
         logger.info("Starting new program instance!");
         Scanner scanner = new Scanner(System.in);
-        logger.info("Please, enter the offered sum for the playground (in BYN):");
-        int fixedSum = enter(scanner, "fixedSum");
+        logger.info("Please, enterArgument the offered sum for the playground (in BYN):");
+        int fixedSum = enterArgument(scanner, "fixedSum");
         playground = new Playground(fixedSum);
         fill(playground, fixedSum);
         playground.setToys(sortByPrice(playground.getToys()));
         logger.info("Descending price-list of all toys has been created.\nStarting the search...");
         logger.info("Enter the bottom price border:");
-        int botBorder = enter(scanner, "botBorder");
+        int botBorder = enterArgument(scanner, "botBorder");
         logger.info("Enter the top price border:");
-        int topBorder = enter(scanner, "topBorder");
+        int topBorder = enterArgument(scanner, "topBorder");
         logger.info("Search output:");
         print(findPrice(botBorder, topBorder));
         logger.info("END.");
 
     }
 
-    public static int enter(Scanner scanner, String name){
+    /**
+     * Matches user input to variable initialisation.
+     * @param scanner casts through to avoid creation of several Scanner objects.
+     * @param name is needed simply to create appropriate logging marks.
+     * @exception IllegalArgumentException
+     * @return int value.
+     */
+    public static int enterArgument(Scanner scanner, String name){
         StringBuilder message = new StringBuilder();
         int arg = 0;
         try {
@@ -58,6 +71,13 @@ public class Starter {
         return arg;
     }
 
+    /**
+     * Random based parameter filling algorithm.
+     * First two arguments correlate with constants.
+     * @see ToyType
+     * @see ToySize
+     * @return Toy object with non-zero parameters.
+     */
     public static Toy generateToy(){
         int typeIndex = (int) (Math.random() * 4);
         int sizeIndex = (int) (Math.random() * 3);
@@ -69,6 +89,13 @@ public class Starter {
         return toy;
     }
 
+    /**
+     * Cycle of making efficient toy list.
+     * Casts list into Playground object parameter.
+     * @param fixedSum is pre-determined by user-input.
+     * The last generated toy breaks the border to stop the cycle,
+     * but never contains in the list.
+     */
     public static void fill(Playground playground, int fixedSum){
         for(int i=0; i<=fixedSum;){
             Toy toy = generateToy();
@@ -109,6 +136,10 @@ public class Starter {
         return rightTypes;
     }
 
+    /**
+     * Establishes the border range for the search.
+     * @return Toy collection of suitable criteria.
+     */
     public static List<Toy> findPrice(int bottom, int top){
         List<Toy> rightPrices = new ArrayList<>();
         for (Toy toy: playground.getToys()){
@@ -119,6 +150,10 @@ public class Starter {
         return rightPrices;
     }
 
+    /**
+     * Receives the list-collection of Toy objects.
+     * Through the iteration provides Toy parameters info to the logger.
+     */
     public static void print(List<Toy> toys){
         for (Toy toy: toys){
             StringBuilder builder = new StringBuilder();
@@ -131,5 +166,4 @@ public class Starter {
             logger.info(builder);
         }
     }
-
 }
