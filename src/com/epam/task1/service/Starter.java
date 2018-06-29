@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.Scanner;
 import com.epam.task1.model.*;
 import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.xml.DOMConfigurator;
 
 /**
  * Represents the creation of playground,
@@ -19,28 +17,24 @@ public class Starter {
 
     private static Playground playground;
 
-    static Logger logger = Logger.getLogger(Starter.class);
+    private static final Logger LOGGER = Logger.getLogger(Starter.class);
 
-    static {
-        new DOMConfigurator().doConfigure("log4j.xml", LogManager.getLoggerRepository());
-    }
-
-    public static void main(String[] args) throws Exception{
-        logger.info("Starting new program instance!");
+    public static void main(String[] args) {
+        LOGGER.info("Starting new program instance!");
         Scanner scanner = new Scanner(System.in);
-        logger.info("Please, enterArgument the offered sum for the playground (in BYN):");
+        LOGGER.info("Please, enterArgument the offered sum for the playground (in BYN):");
         int fixedSum = enterArgument(scanner, "fixedSum");
         playground = new Playground(fixedSum);
         fill(playground, fixedSum);
         playground.setToys(sortByPrice(playground.getToys()));
-        logger.info("Descending price-list of all toys has been created.\nStarting the search...");
-        logger.info("Enter the bottom price border:");
+        LOGGER.info("Descending price-list of all toys has been created.\nStarting the search...");
+        LOGGER.info("Enter the bottom price border:");
         int botBorder = enterArgument(scanner, "botBorder");
-        logger.info("Enter the top price border:");
+        LOGGER.info("Enter the top price border:");
         int topBorder = enterArgument(scanner, "topBorder");
-        logger.info("Search output:");
+        LOGGER.info("Search output:");
         print(findPrice(botBorder, topBorder));
-        logger.info("END.");
+        LOGGER.info("END.");
 
     }
 
@@ -60,13 +54,13 @@ public class Starter {
             message.append(name);
             message.append(" is ");
             message.append(arg);
-            logger.debug(message);
+            LOGGER.debug(message);
         }
         catch(Exception e){
             message.append("user entered illegal argument for ");
             message.append(name);
             message.append(": ");
-            logger.error(message, e);
+            LOGGER.error(message, e);
         }
         return arg;
     }
@@ -105,7 +99,7 @@ public class Starter {
                 playground.setFixedSum(i);
             }
             else {
-                logger.info("The playground successfully filled with toys");
+                LOGGER.info("The playground successfully filled with toys");
             }
         }
     }
@@ -152,7 +146,7 @@ public class Starter {
 
     /**
      * Receives the list-collection of Toy objects.
-     * Through the iteration provides Toy parameters info to the logger.
+     * Through the iteration provides Toy parameters info to the LOGGER.
      */
     public static void print(List<Toy> toys){
         for (Toy toy: toys){
@@ -163,7 +157,7 @@ public class Starter {
             builder.append(" ");
             builder.append(toy.getPrice());
             builder.append(" BYN");
-            logger.info(builder);
+            LOGGER.info(builder);
         }
     }
 }
