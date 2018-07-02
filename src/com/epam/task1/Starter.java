@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-
+import com.epam.task1.service.parser.DomParser;
 import com.epam.task1.service.parser.Parser;
 import com.epam.task1.service.parser.SaxParser;
 import com.epam.task1.service.parser.StaxParser;
@@ -19,21 +19,29 @@ import com.epam.task1.service.SchemeValidation;
  * @author {@linktourl https://github.com/alexandermaxs}
  */
 public class Starter {
-
-    private static Playground playground;
     private static final Logger LOGGER = Logger.getLogger(Starter.class);
+    private static Playground playground;
+    private static String xsdPath = "resources/toys.xsd";
+    private static String xmlPath = "resources/toys.xml";
 
     public static void main(String[] args) {
-/*
         LOGGER.info("Starting new program instance!");
+        LOGGER.info("The result of scheme validation:");
+        SchemeValidation schemeValidation = new SchemeValidation();
+        LOGGER.info(schemeValidation.validate(xsdPath,xmlPath));
         Scanner scanner = new Scanner(System.in);
+        /*
         LOGGER.info("Please, enterArgument the offered sum for the playground (in BYN):");
         int fixedSum = enterArgument(scanner, "fixedSum");
         playground = new Playground(fixedSum);
-
         fill(playground, fixedSum);
-
         playground.setToys(sortByPrice(playground.getToys()));
+        */
+        LOGGER.info("Creating collection of toys with DomParser...");
+        Parser parser = new DomParser(xmlPath);
+        playground = new Playground();
+        List<Toy> toys = parser.parse();
+        playground.setToys(sortByPrice(toys));
         LOGGER.info("Descending price-list of all toys has been created.\nStarting the search...");
         LOGGER.info("Enter the bottom price border:");
         int botBorder = enterArgument(scanner, "botBorder");
@@ -42,16 +50,6 @@ public class Starter {
         LOGGER.info("Search output:");
         print(findPrice(botBorder, topBorder));
         LOGGER.info("END!");
-*/
-        SchemeValidation schemeValidation = new SchemeValidation();
-        System.out.println(schemeValidation.validate("resources/toys.xsd","resources/toys.xml"));
-        Parser parser = new SaxParser("resources/toys.xml");
-        Playground playground = new Playground();
-        List<Toy> toys = parser.parse();
-        playground.setToys(toys);
-        System.out.println(playground.getToys().size());
-        print(playground.getToys());
-
     }
 
     /**
