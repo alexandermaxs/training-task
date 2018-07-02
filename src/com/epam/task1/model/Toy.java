@@ -65,7 +65,7 @@ public class Toy implements Comparable<Toy>{
     }
 
     /**
-     * @return example - Toy@1234:Big#Ball#10
+     * @return example - Toy@1234:BIG#BALL#10
      */
     @Override
     public String toString() {

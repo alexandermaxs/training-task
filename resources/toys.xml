@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<toys>
+    <toy>
+        <price>10</price>
+        <size>BIG</size>
+        <type>DOLL</type>
+    </toy>
+    <toy>
+        <price>2</price>
+        <size>SMALL</size>
+        <type>BALL</type>
+    </toy>
+    <toy>
+        <price>1</price>
+        <size>SMALL</size>
+        <type>CUBE</type>
+    </toy>
+    <toy>
+        <price>8</price>
+        <size>MEDIUM</size>
+        <type>CAR</type>
+    </toy>
+    <toy>
+        <price>5</price>
+        <size>BIG</size>
+        <type>BALL</type>
+    </toy>
+    <toy>
+        <price>3</price>
+        <size>SMALL</size>
+        <type>CAR</type>
+    </toy>
+    <toy>
+        <price>4</price>
+        <size>SMALL</size>
+        <type>DOLL</type>
+    </toy>
+</toys>
