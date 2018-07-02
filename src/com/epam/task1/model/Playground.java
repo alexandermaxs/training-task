@@ -7,6 +7,9 @@ public class Playground {
     private List<Toy> toys = new ArrayList<>();
     private int fixedSum;
 
+    public Playground(){
+    }
+
     public Playground(int fixedSum) {
         this.fixedSum = fixedSum;
     }
