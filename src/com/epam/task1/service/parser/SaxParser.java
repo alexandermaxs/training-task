@@ -3,9 +3,6 @@ package com.epam.task1.service.parser;
 import com.epam.task1.model.Toy;
 import org.apache.log4j.Logger;
 import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
